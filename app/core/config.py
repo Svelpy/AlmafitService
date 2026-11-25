@@ -14,6 +14,8 @@ class Settings(BaseSettings):
     APP_VERSION: str = "1.0.0"
     APP_DESCRIPTION: str = """Lorep Ipsum"""
     ENVIRONMENT: Environment = "development"
+    # Expone /docs, /redoc y /openapi.json fuera de development.
+    DOCS_ENABLED: bool = False
     # =================================
     # Regional
     # =================================
